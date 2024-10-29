@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="03-contact.css">
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container form">
+        <h1>お問い合わせフォーム</h1>
+        <p>
+            弊社にご関心をお持ちいただきまして、ありがとうございます。<br>
+            ご相談や弊社施策についてなど、お気軽にお問い合わせください。<br>
+            お送りいただきました内容を確認次第、担当者よりご連絡させていただきます。<br></p>
+
+        <p>各項目に入力していただき、終わりましたら送信ボタンを押して下さい。</p>
+
+        <form action="https://us-central1-web-design-809ef.cloudfunctions.net/contact" method="post">
+            <input type="hidden" name="number" value="x22004">
+
+            <div class="form-group form-text row">
+                <label for="onamae" class="col-sm-2">お名前</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="onamae" id="onamae" required>
+                    <div class="invalid-feedback">
+                        お名前を入力してください
+                    </div>
+                </div>
+            </div>
+            <div class="form-group form-text row">
+                <label for="email" class="col-sm-2">メールアドレス</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+            </div>
+            <div class="form-group form-text row">
+                <label for="telno" class="col-sm-2">電話番号</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="telno" name="telno">
+                </div>
+            </div>
+
+            <div class="form-group form-check">
+                <label>返信が必要ですか？</label>
+                <input type="checkbox" class="form-check-input" name="ismustrep" id="ismustrep">
+                <label class="form-check-label" for="ismustrep">必要です</label>
+            </div>
+
+            <div class="form-group form-radio">
+                <label>ご希望の連絡手段</label>
+                <input type="radio" class="form-check-input" name="means" id="means1" value="mail">
+                <label class="form-radio-label" for="means1">メール</label>
+                <input type="radio" class="form-check-input" name="means" id="means2" value="tel">
+                <label class="form-radio-label" for="means2">電話</label>
+            </div>
+
+            <div class="form-group">
+                <label for="contacttype">お問い合わせ種別</label>
+                <select name="contacttype" id="contacttype" class="form-control" required>
+                    <option value="">選択してください</option>
+                    <option value="1">Webサイト作成依頼</option>
+                    <option value="2">見積もり依頼</option>
+                    <option value="3">その他お問い合わせ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contacttext">お問い合わせ内容</label>
+                <textarea name="contacttext" id="contacttext" class="form-control" rows="5" required></textarea>
+            </div>
+
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">フォームを送信</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

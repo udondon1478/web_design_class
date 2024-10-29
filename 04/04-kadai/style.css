@@ -1,0 +1,370 @@
+/* すべての要素に対して余白の削除と、
+サイズ計算の基準をボーダー以下に設定する */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #707070;
+}
+
+/* 共通部品のスタイル */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header .global-nav */
+.global-nav {
+  padding: 0 1.3rem; /* 画面幅が狭い場合に詰まってしまうので */
+  background-color: #ffffff;
+}
+.global-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 1.4rem;
+}
+
+.global-nav .container h1 {
+  font-size: 2.1rem;
+}
+
+.global-nav .container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.3rem; /* 子要素間の隙間 */
+  font-size: 1.4rem;
+}
+
+/* HEROセクション */
+.hero {
+  /* 画面高さの80% */
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  background-image: url("./images/Default_natural_highlights_bright_colours_realistic_wide_angle_0_32f399a6-e75d-443e-97e9-8aa9d5517e17_1.jpg");
+  background-size: cover;
+  background-position: 50% 25%;
+  background-color: #dedede;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.hero h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.about-container h3 {
+  text-align: center;
+  margin: 8rem;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.about-container small {
+  /*文字を箱に*/
+  display: block;
+  font-size: 0.6em;
+}
+
+.about-container .vision {
+  display: flex;
+  align-items: center;
+  margin: 8rem 2rem;
+  gap: 1rem;
+}
+
+.about-container .vision .vision-texts {
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.about-container .vision .vision-texts h4 {
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+
+.about-container .vision .vision-texts p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  padding: 1rem 0;
+}
+
+.about-container .vision .vision-texts .linkbutton-readmore {
+  padding: 1rem 5rem;
+  font-size: 1.2rem;
+  background-color: #9a9a9a;
+  width: fit-content;
+  color: #fefefe;
+}
+
+.about-container .vision .vision-images {
+  flex: 1;
+}
+
+.about-container .vision .vision-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* メッセージ欄 */
+.about-container .message .message-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem;
+  gap: 1rem;
+}
+
+.about-container .message .message-texts h4 {
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+
+.about-container .message .message-texts p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.about-container .message .about-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem;
+  gap: 5rem;
+}
+
+.about-container .message .about-images img {
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+}
+
+/* サービス欄 */
+.service {
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #f9f9f9;
+}
+
+.service small {
+  display: block;
+  font-size: 0.6em;
+}
+
+.service-main-container .service-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem;
+  gap: 1rem;
+}
+
+.service-main-container .service-item-container .service-item {
+  background-color: #ffffff;
+  padding: 3rem;
+}
+
+.service-main-container .service-item-container .service-item .icon-container {
+  display: inline-block;
+  background-color: black;
+  border-radius: 10%;
+  padding: 5rem;
+  margin: 3rem;
+}
+
+.service-main-container .service-item-container .service-item p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+/* タグを指定しているわけではないため子孫セレクタを使う必要はなかった、クラスの指定だけしていれば同じものを2つ作る必要はなし */
+.service-main-container
+  .service-item-container
+  .service-item
+  .linkbutton-readmore {
+  padding: 1.5rem 5rem;
+  font-size: 1.2rem;
+  background-color: #9a9a9a;
+  width: fit-content;
+  color: #fefefe;
+}
+
+.service-sub-container .service-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem;
+  gap: 1rem;
+}
+
+.service-sub-container .service-item-container .service-item .icon-container {
+  display: inline-block;
+  background-color: black;
+  border-radius: 10%;
+  padding: 5rem;
+  margin: 3rem;
+}
+
+.service-sub-container .service-item-container .service-item p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.service-sub-container
+  .service-item-container
+  .service-item
+  .linkbutton-readmore {
+  padding: 1.5rem 5rem;
+  font-size: 1.2rem;
+  background-color: #9a9a9a;
+  width: fit-content;
+  color: #fefefe;
+}
+
+/* 地図の表示を調整するサンプル */
+.access {
+  padding: 5rem 0;
+}
+.access h3 {
+  text-align: center;
+  margin: 4rem;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.access h3 small {
+  /*文字を箱に*/
+  display: block;
+}
+.access-map {
+  min-height: 500px;
+  position: relative; /* 親要素が基準とする */
+}
+.access-map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.access-map .access-address {
+  background-color: aqua;
+  font-size: 4rem;
+}
+
+.access-address {
+  font-size: 1.5rem;
+}
+
+.contact {
+  padding: 5rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact h3 {
+  margin: 4rem;
+}
+
+.contact small {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 100;
+}
+
+.contact-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem;
+  gap: 1rem;
+}
+
+.contact-tel {
+  display: flex;
+  flex-direction: column;
+  background-color: #bcbcbc;
+  border-radius: 10px;
+  padding: 20px 70px;
+  height: 150px;
+  border-color: #707070;
+  justify-content: center;
+  align-items: center;
+}
+
+.tel-hedding {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.telno {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.contact-tel small {
+  font-size: 1.2rem;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.contact-form {
+  background-color: #bcbcbc;
+  border-radius: 10px;
+  padding: 20px 70px;
+  font-size: 2.5rem;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+footer {
+  margin-top: 10rem;
+  background-color: #363636;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+footer li {
+  list-style: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}

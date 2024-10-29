@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webデザイン及び演習 第3回課題</title>
+    <link rel="stylesheet" href="03-kadai.css">
+  </head>
+  <body>
+    <h1>1. 文字色・背景色を変更する</h1>
+    <p>次のh2タグには、id="kadai3-1"が設定されています。この要素に対して以下の設定を行いましょう。</p>
+    <ul>
+      <li>文字色を#CFA200</li>
+      <li>背景色を#00103E</li>
+    </ul>
+
+    <h2 id="kadai3-1">Web Designing Section 3</h2>
+
+    <hr>
+
+    <h1>2. borderを用いた見出しの装飾</h1>
+    <p>次のh2タグには、class="kadai3-2"が設定されています。この要素に対して以下の設定を行いましょう。</p>
+    <ul>
+      <li>文字色を#39383C</li>
+      <li>文字サイズを24px</li>
+      <li>文字太さをnormal</li>
+      <li>文字高さを1.2</li>
+      <li>左側境界線を8px、下側境界線を1px、境界線色を#D64123、境界線は全て単線とする</li>
+      <li>内側余白を左右4px, 上下0px</li>
+    </ul>
+
+    <h2 class="kadai3-2">Web Designing Section 3</h2>
+
+    <hr>
+
+    <h1>3. ブロック要素に対する装飾1</h1>
+    <p>次のdivタグには、class="kadai3-3"が設定されています。この要素に対して以下の設定を行いましょう。</p>
+    <ul>
+      <li>文字色を#fff</li>
+      <li>文字サイズを16px</li>
+      <li>高さを300px, 幅を300px</li>
+      <li>背景画像を「kadai3-3.png」(HTMLと同じ場所に配置されているものとする)</li>
+      <li>背景画像の繰り返しはX方向にのみ繰り返しを行う</li>
+      <li>境界線を上下左右1px,#39383C,点線(dotted)</li>
+      <li>外側余白を上下左右20px</li>
+    </ul>
+
+    <div class="kadai3-3">Web Designing Section 3</div>
+
+    <hr>
+
+    <h1>4. ブロック要素に対する装飾2</h1>
+    <p>次のdivタグには、class="kadai3-4"が設定されています。また、その中にはdivタグが5つ配置されており、class="kadai3-4child"が設定されています。これらをそれぞれ親要素、小要素として、これらの要素に対して以下の設定を行いましょう。</p>
+    <ul>
+      <li>親要素の高さ600px, 幅800px</li>
+      <li>親要素の背景色を#4D3842</li>
+      <li>親要素の角を20pxで丸める</li>
+      <li>小要素の高さ75px, 幅75px</li>
+      <li>小要素の背景色を#DB5D67</li>
+      <li>小要素はそれぞれ画像と同じ表示に変更(inline-block)</li>
+      <li>小要素の角を50%で丸める</li>
+      <li>小要素の外側余白を上下左右25px</li>
+    </ul>
+
+    <div class="kadai3-4">
+      <div class="kadai3-4child"></div>
+      <div class="kadai3-4child"></div>
+      <div class="kadai3-4child"></div>
+      <div class="kadai3-4child"></div>
+      <div class="kadai3-4child"></div>
+    </div>
+
+    <hr>
+
+    <h1>5. 画像を並べる</h1>
+    <p>次のdivタグには、class="kadai3-5"が設定されています。また、その中にはimgタグが5つ配置されています。これらの要素に対して以下の設定を行いましょう。</p>
+    <ul>
+      <li>親要素の高さ600px, 最小幅最大幅ともに700px</li>
+      <li>親要素の背景色を#7A6D5F</li>
+      <li>画像に設定された余白をすべて取り除く(行間の余分なスペースも開けないこと)</li>
+      <li>親要素の文字サイズを0(この装飾はあくまでも画像が文字としての挙動もしてしまうため、他の装飾の邪魔をしないように打ち消す目的で行います。)</li>
+      <li>親要素内の子要素が親要素のサイズを超える場合は隠すこと(資料にないので、インターネット等で overflow の使い方に関して調べてください。)</li>
+    </ul>
+
+    <div class="kadai3-5">
+      <img src="350x240.png" alt="">
+      <img src="350x240.png" alt="">
+      <img src="350x240.png" alt="">
+      <img src="350x240.png" alt="">
+      <img src="350x240.png" alt="">
+    </div>
+
+    <hr>
+
+
+    <h1>6. 画像に対するインスタントカメラフィルム風装飾</h1>
+    <p>次のdivタグには、class="kadai3-6"が設定されています。また、その中にはimgタグが1つ配置され、写真に対するコメントがpタグにて配置されています。これらの要素に対して以下の設定を行いましょう。</p>
+    <ul>
+      <li>親要素の高さ450px, 幅400px</li>
+      <li>親要素の背景色を#F7F9F9</li>
+      <li>親要素の内側余白を20px</li>
+      <li>親要素の角丸を8px</li>
+      <li>親要素の影落としを水平オフセット0,垂直オフセット3px,ぼかしのサイズ15px,影の色20%透過黒</li>
+      <li>画像の高さ幅ともに400px</li>
+      <li>画像の配置をcoverフィット(資料にないので、object-fit: cover;を設定してください)</li>
+      <li>説明テキストの文字並びを中央寄せ</li>
+      <li>説明テキストの書体をcursive</li>
+      <li>説明テキストの文字サイズを24px</li>
+      <li>説明テキストの外側余白を0.5文字(em)分</li>
+      <li>説明テキストを-5度傾ける(資料にないので、transform: rotate(-5deg);を設定してください)</li>
+    </ul>
+
+    <div class="kadai3-6">
+      <img src="kadai3-6.jpg" alt="">
+      <p>The cat is god.</p>
+    </div>
+
+    <hr>
+
+    <h1>7. 文章に対する装飾</h1>
+    <p>次のdivタグには、class="kadai3-7"が設定されています。また、文書のタイトル(.title)や著者(.author)のheaderエリアにはmetadataクラスが設定され、文章自体はmainタグ、sectionタグによるマークアップが行われています。
+      詳しくは、HTMLのソースコードをよく見て、これらの要素に対して以下の設定を行いましょう。</p>
+    <ul>
+      <li>この文章の書体は、Windows環境(10の2018Update以降)下では"BIZ UDPMincho"、Mac環境では"Hiragino Mincho ProN W3"、書体の読み込みができない場合などはセリフ体を使用する</li>
+      <li>この文章の基準フォントサイズを16ptとする</li>
+      <li>書体のカーニングを自動で行うように設定する(資料にないので、font-feature-settings: "palt"; を設定してください。)</li>
+      <li>情報エリア(.metadata)の背景色R240, G240 ,B240とする</li>
+      <li>情報エリア(.metadata)の余白は、内側に1文字分設定する</li>
+      <li>情報エリア(.metadata)内のタイトル(.title)及び著者名(.author)は文字を中央寄せとする</li>
+      <li>情報エリア(.metadata)内のタイトル(.title)及び著者名(.author)の字間を0.2文字分開ける(letter-spacingを使ってください。)</li>
+      <li>情報エリア(.metadata)内のタイトル(.title)の文字サイズは基準サイズの3文字分とする</li>
+      <li>情報エリア(.metadata)内の著者名(.author)の文字サイズは基準サイズの1.25文字分とする</li>
+      <li>本文エリア(main>section)は、各セクションごとに内側余白1文字分を設定する</li>
+      <li>本文エリア(main>section)のタイトル(.title)は、文字サイズを基準サイズの1.25文字分とする</li>
+      <li>本文エリア(main>section)の本文(p.text)は内側の左に余白1文字分を設定する</li>
+      <li>本文エリア(main>section)の本文(p.text)内の行間は基準サイズの1.8文字分とする</li>
+      <li>本文エリア(main>section)の本文(p.text)内の字間を0.025文字分開ける</li>
+    </ul>
+
+    <div class="kadai3-7">
+      <header class="metadata">
+        <h1 class="title">藪の中</h1>
+        <h2 class="author">芥川龍之介</h2>
+      </header>
+      <main>
+        <section class="chapter-1">
+          <h3 class="title">
+            <ruby><rb>検非違使</rb><rp>（</rp><rt>けびいし</rt><rp>）</rp></ruby>に問われたる<ruby><rb>木樵</rb><rp>（</rp><rt>きこ</rt><rp>）</rp></ruby>りの物語
+          </h3>
+          <p class="text">
+            さようでございます。あの<ruby><rb>死骸</rb><rp>（</rp><rt>しがい</rt><rp>）</rp></ruby>を見つけたのは、わたしに違いございません。わたしは<ruby><rb>今朝</rb><rp>（</rp><rt>けさ</rt><rp>）</rp></ruby>いつもの通り、裏山の杉を<ruby><rb>伐</rb><rp>（</rp><rt>き</rt><rp>）</rp></ruby>りに参りました。すると<ruby><rb>山陰</rb><rp>（</rp><rt>やまかげ</rt><rp>）</rp></ruby>の<ruby><rb>藪</rb><rp>（</rp><rt>やぶ</rt><rp>）</rp></ruby>の中に、あの死骸があったのでございます。あった処でございますか？　それは<ruby><rb>山科</rb><rp>（</rp><rt>やましな</rt><rp>）</rp></ruby>の駅路からは、四五町ほど隔たって居りましょう。竹の中に<ruby><rb>痩</rb><rp>（</rp><rt>や</rt><rp>）</rp></ruby>せ杉の<ruby><rb>交</rb><rp>（</rp><rt>まじ</rt><rp>）</rp></ruby>った、<ruby><rb>人気</rb><rp>（</rp><rt>ひとけ</rt><rp>）</rp></ruby>のない所でございます。<br />
+            死骸は<ruby><rb>縹</rb><rp>（</rp><rt>はなだ</rt><rp>）</rp></ruby>の<ruby><rb>水干</rb><rp>（</rp><rt>すいかん</rt><rp>）</rp></ruby>に、<ruby><rb>都風</rb><rp>（</rp><rt>みやこふう</rt><rp>）</rp></ruby>のさび烏帽子をかぶったまま、<ruby><rb>仰向</rb><rp>（</rp><rt>あおむ</rt><rp>）</rp></ruby>けに倒れて居りました。何しろ<ruby><rb>一刀</rb><rp>（</rp><rt>ひとかたな</rt><rp>）</rp></ruby>とは申すものの、胸もとの突き傷でございますから、死骸のまわりの竹の落葉は、<ruby><rb>蘇芳</rb><rp>（</rp><rt>すほう</rt><rp>）</rp></ruby>に<ruby><rb>滲</rb><rp>（</rp><rt>し</rt><rp>）</rp></ruby>みたようでございます。いえ、血はもう流れては居りません。傷口も<ruby><rb>乾</rb><rp>（</rp><rt>かわ</rt><rp>）</rp></ruby>いて居ったようでございます。おまけにそこには、<ruby><rb>馬蠅</rb><rp>（</rp><rt>うまばえ</rt><rp>）</rp></ruby>が一匹、わたしの足音も聞えないように、べったり食いついて居りましたっけ。<br />
+            <ruby><rb>太刀</rb><rp>（</rp><rt>たち</rt><rp>）</rp></ruby>か何かは見えなかったか？　いえ、何もございません。ただその側の杉の根がたに、<ruby><rb>縄</rb><rp>（</rp><rt>なわ</rt><rp>）</rp></ruby>が一筋落ちて居りました。それから、――そうそう、縄のほかにも<ruby><rb>櫛</rb><rp>（</rp><rt>くし</rt><rp>）</rp></ruby>が一つございました。死骸のまわりにあったものは、この二つぎりでございます。が、草や竹の落葉は、一面に踏み荒されて居りましたから、きっとあの男は殺される前に、よほど手痛い働きでも致したのに違いございません。何、馬はいなかったか？　あそこは一体馬なぞには、はいれない所でございます。何しろ馬の<ruby><rb>通</rb><rp>（</rp><rt>かよ</rt><rp>）</rp></ruby>う路とは、藪一つ隔たって居りますから。
+          </p>
+        </section>
+        <section class="chapter-2">
+          <h3 class="title">
+            検非違使に問われたる<ruby><rb>旅法師</rb><rp>（</rp><rt>たびほうし</rt><rp>）</rp></ruby>の物語
+          </h3>
+          <p class="text">
+            あの死骸の男には、確かに<ruby><rb>昨日</rb><rp>（</rp><rt>きのう</rt><rp>）</rp></ruby><ruby><rb>遇</rb><rp>（</rp><rt>あ</rt><rp>）</rp></ruby>って居ります。昨日の、――さあ、<ruby><rb>午頃</rb><rp>（</rp><rt>ひるごろ</rt><rp>）</rp></ruby>でございましょう。場所は<ruby><rb>関山</rb><rp>（</rp><rt>せきやま</rt><rp>）</rp></ruby>から<ruby><rb>山科</rb><rp>（</rp><rt>やましな</rt><rp>）</rp></ruby>へ、参ろうと云う途中でございます。あの男は馬に乗った女と一しょに、関山の方へ歩いて参りました。女は<ruby><rb>牟子</rb><rp>（</rp><rt>むし</rt><rp>）</rp></ruby>を垂れて居りましたから、顔はわたしにはわかりません。見えたのはただ<ruby><rb>萩重</rb><rp>（</rp><rt>はぎがさ</rt><rp>）</rp></ruby>ねらしい、<ruby><rb>衣</rb><rp>（</rp><rt>きぬ</rt><rp>）</rp></ruby>の色ばかりでございます。馬は<ruby><rb>月毛</rb><rp>（</rp><rt>つきげ</rt><rp>）</rp></ruby>の、――確か<ruby><rb>法師髪</rb><rp>（</rp><rt>ほうしがみ</rt><rp>）</rp></ruby>の馬のようでございました。<ruby><rb>丈</rb><rp>（</rp><rt>たけ</rt><rp>）</rp></ruby>でございますか？　丈は<ruby><rb>四寸</rb><rp>（</rp><rt>よき</rt><rp>）</rp></ruby>もございましたか？　――何しろ<ruby><rb>沙門</rb><rp>（</rp><rt>しゃもん</rt><rp>）</rp></ruby>の事でございますから、その辺ははっきり存じません。男は、――いえ、<ruby><rb>太刀</rb><rp>（</rp><rt>たち</rt><rp>）</rp></ruby>も帯びて<ruby><rb>居</rb><rp>（</rp><rt>お</rt><rp>）</rp></ruby>れば、弓矢も<ruby><rb>携</rb><rp>（</rp><rt>たずさ</rt><rp>）</rp></ruby>えて居りました。殊に黒い<ruby><rb>塗</rb><rp>（</rp><rt>ぬ</rt><rp>）</rp></ruby>り<ruby><rb>箙</rb><rp>（</rp><rt>えびら</rt><rp>）</rp></ruby>へ、二十あまり<ruby><rb>征矢</rb><rp>（</rp><rt>そや</rt><rp>）</rp></ruby>をさしたのは、ただ今でもはっきり覚えて居ります。<br />
+            あの男がかようになろうとは、夢にも思わずに居りましたが、<ruby><rb>真</rb><rp>（</rp><rt>まこと</rt><rp>）</rp></ruby>に人間の命なぞは、<ruby><rb>如露亦如電</rb><rp>（</rp><rt>にょろやくにょでん</rt><rp>）</rp></ruby>に違いございません。やれやれ、何とも申しようのない、気の毒な事を致しました。
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <hr>
+
+    <h1>8. 文書全体の背景設定とグラデーションオーバーレイとスクロール追尾</h1>
+    <p>次のdivタグには、class="kadai3-8"が設定されていますがこれとは関係なく、文書全体の背景について設定を行いましょう。</p>
+    <ul>
+      <li>この文書(body)に対して背景画像を「kadai3-8.jpg」(HTMLと同じ場所に配置されているものとする)</li>
+      <li>背景画像には、radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 60%) にて表現されるグラデーションをオーバーレイ表示させる</li>
+      <li>背景画像の繰り返しは行わない</li>
+      <li>背景画像の位置は右下に配置する</li>
+      <li>背景画像のサイズは縦横ともに400px 400pxとなるように設定する</li>
+      <li>背景画像はスクロールしてもブラウザウィンドウに対して絶対的な位置で固定されること</li>
+    </ul>
+
+    <div class="kadai3-8">Web Designing Section 3</div>
+
+    <hr>
+
+  </body>
+</html>

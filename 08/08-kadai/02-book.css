@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.author {
+  position: absolute;
+  bottom: 0;
+}
+
+.main_text {
+  overflow: auto;
+}
+
+div {
+  writing-mode: vertical-rl;
+}
+
+.main_text {
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+}

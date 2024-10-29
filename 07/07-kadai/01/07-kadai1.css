@@ -1,0 +1,206 @@
+.haru div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #FAA1BF;
+}
+.haru div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #c7dc68;
+}
+.haru div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #FFEDD5;
+}
+
+.natsu div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #05AFF2;
+}
+.natsu div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #F2E313;
+}
+.natsu div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #F29F05;
+}
+
+.aki div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #D9A404;
+}
+.aki div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #733702;
+}
+.aki div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #731702;
+}
+
+.fuyu div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #5888A6;
+}
+.fuyu div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #ADC8D9;
+}
+.fuyu div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #EBF0F2;
+}
+
+.karui div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #F291C7;
+}
+.karui div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #04B2D9;
+}
+.karui div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #F2B705;
+}
+
+.omoi div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #313740;
+}
+.omoi div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #5F6873;
+}
+.omoi div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #7B838C;
+}
+
+.fuwafuwa div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #F2F2F2;
+}
+.fuwafuwa div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #F2D4C2;
+}
+.fuwafuwa div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #D9B4A7;
+}
+
+.dosshiri div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #554B42;
+}
+.dosshiri div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #333333;
+}
+.dosshiri div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #000088;
+}
+
+.cool div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #000088;
+}
+.cool div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #72a8de;
+}
+.cool div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #00A0C0;
+}
+
+.hot div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #FF0000;
+}
+.hot div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #FF8C00;
+}
+.hot div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #FFFF00;
+}
+
+.kawaii div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #FFC0CB;
+}
+.kawaii div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #00FFFF;
+}
+.kawaii div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #FFFF00;
+}
+
+.sacred div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #FFFFFF;
+}
+.sacred div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #FFD700;
+}
+.sacred div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #C0C0C0;
+}
+.frighten div:nth-child(1) {
+  /* base */
+  width: 70%;
+  background: #000000;
+}
+.frighten div:nth-child(2) {
+  /* main */
+  width: 25%;
+  background: #FF0000;
+}
+.frighten div:nth-child(3) {
+  /* accent */
+  width: 5%;
+  background: #808080;
+}

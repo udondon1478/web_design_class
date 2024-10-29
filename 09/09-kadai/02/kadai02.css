@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+:root {
+    font-size: 16pt;
+    font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient( 68.1deg,  rgba(255,200,69,.2) -0.3%, rgba(239,69,115,.2) 100.2% ),
+        url("./joy-memon-rdjAQGAbLT4-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+main {
+    width: 60vw;
+    min-width: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.due-date-container {
+    text-align: center;
+    color: #fff;
+    text-shadow: 
+        black 1px 1px 0, black -1px -1px 0,
+        black -1px 1px 0, black 1px -1px 0,
+        black 0px 1px 0, black  0-1px 0,
+        black -1px 0 0, black 1px 0 0;
+}
+.due-date-container span {
+    font-size: 3rem;
+}
+.due-date-container span.num-value {
+    font-size: 5rem;
+}

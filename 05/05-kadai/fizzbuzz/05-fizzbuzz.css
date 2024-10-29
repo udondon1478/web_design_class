@@ -1,0 +1,12 @@
+/* 第5回 課題3 CSS FizzBuzz */
+li:nth-child(3n)::after {
+  content: "Fizz";
+}
+
+li:nth-child(5n)::after {
+  content: "Buzz";
+}
+
+li:nth-child(15n)::after {
+  content: "FizzBuzz";
+}

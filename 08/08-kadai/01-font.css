@@ -1,0 +1,14 @@
+.mp-rounded-1c {
+  font-family: "M PLUS Rounded 1c";
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Kaisotai-Next-UP-B";
+  src: url("./font/Kaisotai-Next-UP-B.woff2");
+}
+
+.kaiso {
+  font-family: "Kaisotai-Next-UP-B";
+  font-weight: normal;
+}

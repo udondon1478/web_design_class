@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>第5回 課題1 CSS練習問題</title>
+    <link rel="stylesheet" href="05-practice.css">
+    <style>
+      .link-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSSを使ってAタグを装飾しよう。</h1>
+    <hr>
+    <p>このHTMLには、"05-practice.css"へのlinkが設定されています。提出するのは"05-practice.css"のみです。</p>
+    <h2>1. マウスオーバーで色を変えるリンク</h2>
+    <ol>
+      <li>通常時の文字色を好きな色に変更する</li>
+      <li>マウスカーソルをリンクの上に乗せた時、通常時の文字色とは大きく異なる色に変更する</li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="#" class="a1">リンク(.a1)</a>
+    </div>
+    <hr>
+
+    <h2>2. マウスオーバーでテキストのアンダーラインを表示するリンク</h2>
+    <ol>
+      <li>通常時、aタグのテキストアンダーラインは非表示とする(text-decoration: none; を使用する)</li>
+      <li>マウスカーソルをリンクの上に乗せた時、テキストアンダーラインを表示する(text-decoration: underline; を使用する)</li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="#" class="a2">リンク(.a2)</a>
+    </div>
+    <hr>
+
+    <h2>3. 訪問済みのリンクでも文字色を変更させない</h2>
+    <ol>
+      <li>通常時訪問済みのどちらの状態でも、aタグの文字色は#F35とする。<br>(注意点: :visited擬似クラスは、指定できるCSSプロパティにいくつかの制約があります。参考リンク <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:visited#%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E9%81%A9%E7%94%A8%E3%81%AE%E5%88%B6%E7%B4%84" target="_blank">:visited - CSS: カスケーディングスタイルシート | MDN</a>)</li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:visited#%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E9%81%A9%E7%94%A8%E3%81%AE%E5%88%B6%E7%B4%84" class="a3">リンク(.a3)</a>
+    </div>
+    <hr>
+
+    <h2>4-1. aタグをボタンのように装飾する</h2>
+    <ol>
+      <li>.a4 に対して、任意の背景色と文字色を持つボタンとして装飾する</li>
+      <li>.a4 に対して、角丸や、ボーダーラインなどで任意の装飾を加える</li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="#" class="a4 sub1">リンク(.a4.sub1)</a>
+    </div>
+    <hr>
+
+    <h2>4-2. ボタンのように装飾したaタグでマウスオーバー,クリックで色を変える</h2>
+    <ol>
+      <li>リンククリック時、通常時の文字色とマウスオーバー時の背景色は大きく異なる色に変更する</li>
+      <li>背景色の変更は、0.3秒の時間をかけて変化させる</li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="#" class="a4 sub2">リンク(.a4.sub2)</a>
+    </div>
+    <hr>
+
+    <h2>5. くるくる回る絵文字</h2>
+    <ol>
+      <li>絵文字の文字サイズは 300px に設定する</li>
+      <li>@Keyframesを用いて、「反時計回り」に回転するアニメーションを作成する</li>
+      <li>リンクにマウスカーソルが乗ったとき、作成したアニメーションが行われるように設定する（アニメーションは2秒で1回転、等速での回転運動で、延々とループする）</li>
+      <li>ヒント: CSSの、@keyframes, animation, transform: rotate あたりを調べて実装してみましょう。また、aタグはデフォルトがインライン要素です。transformプロパティが有効でない場合があります。画像と同じ扱いに変える必要があります。</li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="#" class="a5">🍣</a>
+    </div>
+    <hr>
+
+    <h2>6. 背景がグラデーションで動いているリンクボタン</h2>
+    <ol>
+      <li>以下のGIFアニメーションを参照して、これを真似て作成しましょう。<br>
+      <img src="./images/1-6.gif"></li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="#" class="btn-register">
+        今すぐ無料登録!!
+      </a>
+    </div>
+    <hr>
+
+    <h2>7. マイクロインタラクションを実装したリンクボタン</h2>
+    <ol>
+      <li>以下のGIFアニメーションを参照して、これを真似て作成しましょう。<br>
+      <img src="./images/1-7.gif"></li>
+    </ol>
+    <hr>
+    <div class="link-container">
+      <a href="#" class="btn-animate">
+        Button
+      </a>
+    </div>
+    <hr>
+  </body>
+</html>

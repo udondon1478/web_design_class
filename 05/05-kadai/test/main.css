@@ -1,0 +1,10 @@
+@charset "UTF-8";
+p {
+    font-size: 16px;
+}
+p:before {
+    content: "擬似要素は要素の前後に";
+}
+p:after {
+    content: "を差し込むことが可能です。";
+}

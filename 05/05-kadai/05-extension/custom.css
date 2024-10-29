@@ -1,0 +1,31 @@
+/* このCSSファイルが、moodleのサイトへ追加で流し込まれます */
+
+
+.course-content .current::before {
+  animation: expand 2s ease-out infinite;
+  opacity: 1;
+}
+@keyframes expand {
+  0%,
+  40%,
+  60%,
+  80% {
+    transform: scale(1);
+  }
+  50%,
+  70% {
+    transform: scale(0.95);
+  }
+}
+
+
+.course-content .current::before {
+  border-left: 10px solid !important;
+  border-image-slice: 1 !important;
+  border-image-source: linear-gradient(#8bc6ec 0%, #9599e2 100%) !important;
+}
+
+.course-content .current {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%) !important;
+}
